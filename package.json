@@ -1,0 +1,36 @@
+{
+  "name": "just-run-js",
+  "version": "0.0.0",
+  "description": "just run your js code here",
+  "main": "",
+  "scripts": {
+    "test": "jest",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iFoxMan/just-run-js.git"
+  },
+  "author": "Ivan Lisin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iFoxMan/just-run-js/issues"
+  },
+  "homepage": "https://github.com/iFoxMan/just-run-js#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/node": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.1.0",
+    "eslint": "^7.3.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jest": "^23.17.1",
+    "jest": "^26.1.0",
+    "jest-watch-typeahead": "^0.6.0"
+  }
+}
