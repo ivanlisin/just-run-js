@@ -1,5 +1,10 @@
+import path from 'path';
+import fs from 'fs';
 import message from '../src';
 
+const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
+const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8');
+
 test('', () => {
-  expect(message).toEqual('just run your js code here');
+  expect(message).toEqual(readFile('expected.txt'));
 });
