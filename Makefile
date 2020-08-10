@@ -1,11 +1,10 @@
 install: install-deps
 
+run:
+	bin/run.js
+
 install-deps:
 	npm ci
-
-build:
-	rm -rf dist
-	npm run build
 
 test:
 	npm test
@@ -19,7 +18,7 @@ test-coverage:
 lint:
 	npx eslint .
 
-run:
-	npx babel-node src/bin/run.js
+publish:
+	npm publish
 
 .PHONY: test
