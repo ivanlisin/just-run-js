@@ -7,15 +7,16 @@ plugins:
 # https://eslint.org/docs/user-guide/configuring#specifying-environments
 env:
   node: true
+  es2020: true
 
 extends:
   - 'airbnb-base'
   - 'plugin:jest/recommended'
 
+parserOptions:
+  ecmaVersion: 11
+  sourceType: module
+
 rules:
   no-console: 0
   import/extensions: 0 # FIXME: remove when rule will be adjusted for new nodejs version
-
-# Включает поддержку конструкции import.meta.url
-parserOptions:
-  ecmaVersion: 2020
