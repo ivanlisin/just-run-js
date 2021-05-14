@@ -13,18 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iFoxMan/just-run-js.git"
+    "url": "git+https://github.com/ivanlisin/just-run-js.git"
   },
   "author": "Ivan Lisin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iFoxMan/just-run-js/issues"
+    "url": "https://github.com/ivanlisin/just-run-js/issues"
   },
   "type": "module",
   "jest": {
     "testEnvironment": "node"
   },
-  "homepage": "https://github.com/iFoxMan/just-run-js#readme",
+  "homepage": "https://github.com/ivanlisin/just-run-js#readme",
   "devDependencies": {
     "@types/jest": "^26.0.19",
     "eslint": "^7.15.0",
